@@ -78,6 +78,25 @@ return packer.startup(function(use)
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
    }
+   -- Snippets + Autocomplete
+   use "akinsho/toggleterm.nvim"
+   use 'hrsh7th/cmp-buffer'
+   use 'hrsh7th/cmp-path'
+   use 'hrsh7th/cmp-cmdline'
+   use 'hrsh7th/nvim-cmp'
+   use "hrsh7th/cmp-nvim-lsp"
+   use 'L3MON4D3/LuaSnip'
+   use "rafamadriz/friendly-snippets"
+   -- LSP
+   use 'neovim/nvim-lspconfig' -- enable LSP
+   use 'williamboman/nvim-lsp-installer' -- LSP installer helper
+   use "tamago324/nlsp-settings.nvim"
+
+   -- Treesitter
+   use {
+      "nvim-treesitter/nvim-treesitter",
+      run = ":TSUpdate",
+   }
 
    -- Automatically set up your configuration after cloning packer.nvim
    -- Put this at the end after all plugins
