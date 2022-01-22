@@ -72,7 +72,6 @@ return packer.startup(function(use)
       requires = {
          'kyazdani42/nvim-web-devicons', -- optional, for file icon
       },
-      config = function() require'nvim-tree'.setup {} end
    }
    use {
       'nvim-lualine/lualine.nvim',
@@ -91,12 +90,19 @@ return packer.startup(function(use)
    use 'neovim/nvim-lspconfig' -- enable LSP
    use 'williamboman/nvim-lsp-installer' -- LSP installer helper
    use "tamago324/nlsp-settings.nvim"
+   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
    -- Treesitter
    use {
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate",
    }
+
+   -- Movement
+   use 'ggandor/lightspeed.nvim'
+
+   -- NeoGit
+   use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
    -- Automatically set up your configuration after cloning packer.nvim
    -- Put this at the end after all plugins
