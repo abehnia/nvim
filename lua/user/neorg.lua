@@ -14,6 +14,11 @@ neorg.setup {
                     my_workspace = "~/neorg"
                 }
             }
-        }
+        },
+        ["core.norg.completion"] = { -- Manage your directories with Neorg
+            config = {
+                engine = "nvim-cmp",
+            }
+        },
     },
 }
