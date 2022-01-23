@@ -132,6 +132,11 @@ _G.packer_plugins = {
     path = "/home/ard/.local/share/nvim/site/pack/packer/start/neogit",
     url = "https://github.com/TimUntersberger/neogit"
   },
+  neorg = {
+    loaded = true,
+    path = "/home/ard/.local/share/nvim/site/pack/packer/start/neorg",
+    url = "https://github.com/nvim-neorg/neorg"
+  },
   ["nlsp-settings.nvim"] = {
     loaded = true,
     path = "/home/ard/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
