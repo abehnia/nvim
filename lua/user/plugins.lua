@@ -104,12 +104,6 @@ return packer.startup(function(use)
    -- NeoGit
    use({ "TimUntersberger/neogit", requires = "nvim-lua/plenary.nvim" })
 
-   -- NeoOrg
-   use({
-      "nvim-neorg/neorg",
-      requires = "nvim-lua/plenary.nvim",
-   })
-
    -- Automatically set up your configuration after cloning packer.nvim
    -- Put this at the end after all plugins
    if PACKER_BOOTSTRAP then
