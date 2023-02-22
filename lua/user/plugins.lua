@@ -87,8 +87,10 @@ return packer.startup(function(use)
    use("L3MON4D3/LuaSnip")
    use("rafamadriz/friendly-snippets")
    -- LSP
+   -- use("williamboman/nvim-lsp-installer") -- LSP installer helper
+   use ("williamboman/mason.nvim") -- LSP Installer - next generation
+   use ("williamboman/mason-lspconfig.nvim") -- To bridge between lsp config and mason
    use("neovim/nvim-lspconfig") -- enable LSP
-   use("williamboman/nvim-lsp-installer") -- LSP installer helper
    use("tamago324/nlsp-settings.nvim")
    use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 
